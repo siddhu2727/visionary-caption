@@ -1,11 +1,9 @@
 
-import { GoogleGenAI, Type, GenerateContentResponse, Modality } from "@google/genai";
 import { AnalysisResult, VisualInput } from "../types";
 
-const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
 export const analyzeVisual = async (input: VisualInput, isMedical: boolean): Promise<AnalysisResult> => {
-  const ai = new GoogleGenAI({ apiKey: API_KEY });
+  
   
   const systemInstruction = `You are Visionary, a high-fidelity visual auditor and master storyteller. 
   ${isMedical ? "The user has flagged this as medical imagery. Be clinically precision-oriented, objective, and use formal medical terminology." : "Analyze the provided visual data for context, deep narrative, and technical details."}
