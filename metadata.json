@@ -1,0 +1,8 @@
+
+{
+  "name": "Visionary AI",
+  "description": "Visionary - Advanced AI Image Caption & Analysis System. Bridging the gap between visual pixels and human-like narrative.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
