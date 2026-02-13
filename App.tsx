@@ -9,9 +9,9 @@ import {
   translateResult, 
   generateSpeech,
   askVisionary
-} from './services/geminiService';
-import { playPCM } from './services/audioService';
-import { extractFramesFromVideo, fileToBase64 } from './services/videoService';
+} from './geminiService';
+import { playPCM } from './audioService';
+import { extractFramesFromVideo, fileToBase64 } from './videoService';
 import { 
   AnalysisResult, 
   InputMode, 
