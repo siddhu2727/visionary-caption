@@ -2,7 +2,7 @@
 import { GoogleGenAI, Type, GenerateContentResponse, Modality } from "@google/genai";
 import { AnalysisResult, VisualInput } from "../types";
 
-const API_KEY = process.env.API_KEY || "";
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY || "";
 
 export const analyzeVisual = async (input: VisualInput, isMedical: boolean): Promise<AnalysisResult> => {
   const ai = new GoogleGenAI({ apiKey: API_KEY });
