@@ -3,7 +3,6 @@ import React, { useState, useRef, useEffect } from 'react';
 import { 
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell 
 } from 'recharts';
-import { GoogleGenAI } from "@google/genai";
 import { 
   analyzeVisual} from './geminiService';
 import { playPCM } from './audioService';
