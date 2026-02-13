@@ -5,11 +5,7 @@ import {
 } from 'recharts';
 import { GoogleGenAI } from "@google/genai";
 import { 
-  analyzeVisual, 
-  translateResult, 
-  generateSpeech,
-  askVisionary
-} from './geminiService';
+  analyzeVisual} from './geminiService';
 import { playPCM } from './audioService';
 import { extractFramesFromVideo, fileToBase64 } from './videoService';
 import { 
